@@ -37,8 +37,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          entrypoint: "/sample"
-          path: './sample'
+          #entrypoint: "/sample"
+          #path: '.'
+          directory: .sample
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
